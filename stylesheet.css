@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    background-image: url(board.jpg);
+}
+
+#board {
+    display: flex;
+    justify-content: center;
+    /*height: 400px;
+    background-color: yellow;
+    font-family: sans-serif;*/
+}
+.slot {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+}
+.hole {
+    background-color: lightgray;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+.player1 .hole {
+    /*background-color: black*/
+    background-image: url(supermario.jpg);
+}
+.player2 .hole {
+    /*background-color: red;*/
+    background-image: url(luigi.jpg);
+}
+button {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 90px;
+    height: 30px;
+    background-color: purple;
+}
+
+#Animation {
+    width: 160px;
+    height: 130px;
+    position: absolute;
+    background-image: url(supermario-photo.jpg);
+}
+#Animation-right {
+    width: 160px;
+    height: 130px;
+    position: absolute;
+    background-image: url(luigi-photo.jpg);
+}
+.box {
+    float: left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-image: url(yoshi-red.png);
+    background-color: white;
+    height: 150px;
+    margin: 0 auto 0 auto;
+    transform-origin: left;
+    width: 130px;
+}
+.bounce-3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+}
+@keyframes bounce-3 {
+    30% {
+        transform: translateY(-200px);
+    }
+}
+.box2 {
+    float: right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-image: url(mushroom.jpg);
+    background-color: white;
+    height: 150px;
+    margin: 0 auto 0 auto;
+    transform-origin: right;
+    width: 130px;
+}
+.bounce-3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+}
+@keyframes bounce-3 {
+    30% {
+        transform: translateY(-200px);
+    }
+}
